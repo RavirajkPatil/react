@@ -17,14 +17,17 @@ function App() {
     // counter = counter + 1;
 
     //if(counter<=20 && counter >=0)
-      setCounter(counter)
-
+    //---After write below it wouldn't increase value by 3, It increase by only 1.
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1) // this is override all abouve setCounters
+/*
     setCounter(prevCounter => prevCounter + 3)  // add value 3 in previous value
 
     setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
     setCounter(prevCounter => prevCounter + 1)
-
+*/
   }
 
   const removeValue = () =>{
