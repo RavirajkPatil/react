@@ -10,11 +10,21 @@ function App() {
 
   const addValue = ()=>{
     //console.log("Value added",counter)
-    counter = counter + 1;
-    if(counter<=20 && counter >=0)
+
+    // counter = counter + 1;
+    // counter = counter + 1;
+    // counter = counter + 1;
+    // counter = counter + 1;
+
+    //if(counter<=20 && counter >=0)
       setCounter(counter)
 
-    //setCounter(prevCounter => prevCounter + 3)  // add value 3 in previous value
+    setCounter(prevCounter => prevCounter + 3)  // add value 3 in previous value
+
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+
   }
 
   const removeValue = () =>{
